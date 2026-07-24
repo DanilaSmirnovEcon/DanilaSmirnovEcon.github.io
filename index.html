@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Danila Smirnov</title>
+<meta name="description" content="Danila Smirnov is a quantitative macroeconomist in the Fiscal Affairs Department at the IMF. Research on heterogeneous agents, monetary and fiscal policy, sovereign debt dynamics, and international spillovers.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Danila Smirnov">
+<meta property="og:description" content="Quantitative macroeconomist, Fiscal Affairs Department, IMF. Heterogeneous agents, monetary and fiscal policy, sovereign debt dynamics, international spillovers.">
+<meta property="og:url" content="https://www.danilasmirnov.com/">
+<meta property="og:image" content="https://www.danilasmirnov.com/files/danila.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#f6f7f8;
+  --ink:#15181c;
+  --muted:#626c78;
+  --rule:#d8dde2;
+  --accent:#2b4a7d;
+  --accent-soft:#e8edf5;
+  --serif:"Source Serif 4",Georgia,serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --gutter:9.5rem;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--serif);
+  font-size:18px;
+  line-height:1.62;
+  font-weight:400;
+}
+.wrap{max-width:56rem;margin:0 auto;padding:0 1.5rem}
+
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--rule)}
+a:hover{border-bottom-color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+/* ---------- masthead ---------- */
+.masthead{
+  padding:5rem 0 2.75rem;
+  display:grid;
+  grid-template-columns:1fr 11rem;
+  gap:2.5rem;
+  align-items:start;
+}
+.masthead h1{
+  font-size:clamp(2.6rem,7vw,4rem);
+  font-weight:600;
+  line-height:1.02;
+  letter-spacing:-.02em;
+  margin:0 0 .9rem;
+}
+.standfirst{max-width:34rem;margin:0;color:var(--muted);font-size:1.06rem}
+.standfirst strong{color:var(--ink);font-weight:600}
+.portrait{width:100%;height:auto;display:block;border-radius:2px}
+
+.quicklinks{
+  font-family:var(--mono);
+  font-size:.78rem;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  margin-top:1.9rem;
+  display:flex;
+  flex-wrap:wrap;
+  gap:1.35rem;
+}
+.quicklinks a{border-bottom:1px solid var(--accent-soft);padding-bottom:2px}
+
+/* ---------- section headers ---------- */
+.section{border-top:2px solid var(--ink);padding-top:.65rem;margin-top:3.5rem}
+.section h2{
+  font-family:var(--mono);
+  font-size:.78rem;
+  font-weight:500;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin:0 0 2rem;
+}
+
+/* ---------- entries: mono metadata gutter + content ---------- */
+.entry{
+  display:grid;
+  grid-template-columns:var(--gutter) 1fr;
+  gap:0 2.25rem;
+  padding-bottom:2.5rem;
+  margin-bottom:2.5rem;
+  border-bottom:1px solid var(--rule);
+}
+.entry:last-child{border-bottom:0;margin-bottom:0}
+
+.stamp{font-family:var(--mono);font-size:.76rem;line-height:1.75;color:var(--muted)}
+.stamp .yr{display:block;color:var(--ink);font-weight:500;font-size:.85rem}
+.stamp .status{display:block;margin-top:.35rem}
+.stamp .status.published{color:var(--accent)}
+
+.entry h3{
+  font-size:1.32rem;
+  font-weight:600;
+  line-height:1.28;
+  letter-spacing:-.008em;
+  margin:0 0 .45rem;
+}
+.byline{margin:0 0 .85rem;color:var(--muted);font-size:.98rem}
+
+details{margin:0 0 .9rem}
+summary{
+  font-family:var(--mono);
+  font-size:.74rem;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  color:var(--accent);
+  cursor:pointer;
+  list-style:none;
+  display:inline-block;
+  padding:.15rem 0;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+ ";font-weight:500}
+details[open] summary::before{content:"\2212 "}
+summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.abstract{
+  margin:.9rem 0 0;
+  font-size:.97rem;
+  color:#39404a;
+  border-left:2px solid var(--accent-soft);
+  padding-left:1.15rem;
+}
+
+.venues{margin:0;font-size:.88rem;color:var(--muted);line-height:1.75}
+.venues .lab{
+  font-family:var(--mono);
+  font-size:.72rem;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+
+/* ---------- discussions ---------- */
+.disc h3{font-size:1.08rem;font-weight:600;margin:0 0 .3rem;line-height:1.35}
+.disc p{margin:0;color:var(--muted);font-size:.94rem}
+.disc em{font-style:italic}
+
+/* ---------- footer ---------- */
+footer{
+  border-top:1px solid var(--rule);
+  margin-top:4.5rem;
+  padding:1.75rem 0 4rem;
+  font-size:.85rem;
+  color:var(--muted);
+}
+footer p{margin:0 0 .6rem;max-width:40rem}
+
+@media (max-width:700px){
+  .masthead{grid-template-columns:1fr;gap:1.75rem}
+  .portrait{max-width:11rem}
+}
+@media (max-width:640px){
+  body{font-size:17px}
+  .masthead{padding:3.25rem 0 2rem}
+  .entry{grid-template-columns:1fr;gap:0}
+  .stamp{margin-bottom:.7rem}
+  .stamp .yr{display:inline;font-size:.78rem}
+  .stamp .status{display:inline;margin-left:.6rem}
+  .stamp .status::before{content:"\00b7 "}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div>
+      <h1>Danila Smirnov</h1>
+      <p class="standfirst">
+        <strong>Fiscal Affairs Department, International Monetary Fund.</strong>
+        I am a quantitative macroeconomist. My research focuses on heterogeneous
+        agents, monetary and fiscal policy, sovereign debt dynamics, and
+        international spillovers.
+      </p>
+      <nav class="quicklinks">
+        <a href="/files/smirnov_cv.pdf">Curriculum vitae</a>
+        <a href="mailto:danila.smirnov@upf.edu">Email</a>
+        <!-- EDIT: add your Google Scholar / IMF author page URL, or delete this line -->
+        <a href="#">Google Scholar</a>
+      </nav>
+    </div>
+    <img class="portrait" src="/files/danila.jpg" alt="Danila Smirnov">
+  </header>
+
+  <section class="section">
+    <h2>Working papers</h2>
+
+    <!-- ============================================================
+         To add a new paper, copy one <article class="entry"> block
+         and edit the text. Nothing else needs to change.
+         ============================================================ -->
+
+    <article class="entry">
+      <div class="stamp">
+        <span class="yr">2026</span>
+        <span class="status">Working paper</span>
+      </div>
+      <div>
+        <h3>Global Spillovers from U.S. Bond Supply Shocks</h3>
+        <p class="byline">Draft available upon request</p>
+        <details>
+          <summary>Abstract</summary>
+          <p class="abstract">
+            We study spillovers from U.S. bond supply shocks, identified from yield
+            moves around U.S. Treasury auction announcements. Using the shocks as
+            instruments in daily and monthly local projections for AEs and EMs, we
+            find pass through to global long rates. A debt expansion shock that
+            raises the U.S. 10 year yield by 10 bps lifts foreign 10 year yields by
+            8 bps within two days. Monthly aggregation shows contractionary real
+            effects: U.S. industrial production falls up to 0.4 percent after eight
+            months and foreign industrial production up to 0.8 percent after six
+            months. Larger foreign effects reflect financial tightening, exchange
+            rate depreciation, and weaker U.S. demand. Spillovers are heterogeneous:
+            moving from the 25th to 75th percentile of foreign investor participation
+            adds 4 bps to yield responses and deepens IP declines by 0.5 pp. Results
+            are robust to a demand side shock and consistent with benchmarks,
+            highlighting U.S. bond supply as a key driver of global financial
+            conditions and real activity, amplified by foreign investors.
+          </p>
+        </details>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="stamp">
+        <span class="yr">2026</span>
+        <span class="status published">IMF WP 26/121</span>
+      </div>
+      <div>
+        <h3>HANK-Based Fiscal Consolidation for a High-Debt Advanced Euro Area Economy</h3>
+        <p class="byline">
+          with <a href="https://sites.google.com/site/geeheehong/home">Gee Hee Hong</a>,
+          <a href="https://www.naowarmohiuddin.com/">Naowar Mohiuddin</a>,
+          <a href="https://www.imf.org/en/blogs/authors/rasmane%20ouedraogo">Rasmane Ouedraogo</a>, and
+          <a href="https://vazirimaryam.com/">Maryam Vaziri</a> &middot;
+          <a href="https://www.imf.org/en/publications/wp/issues/2026/06/12/hank-based-fiscal-consolidation-for-a-high-debt-advanced-euro-area-economy-576864">IMF Working Paper 2026/121</a>,
+          June 2026
+        </p>
+        <details>
+          <summary>Abstract</summary>
+          <p class="abstract">
+            High-debt euro area economies face fiscal consolidation in a low-growth
+            environment. We use a Heterogeneous Agent New Keynesian model to assess
+            how consolidation composition shapes aggregate and distributional
+            outcomes in a representative high-debt economy. The status quo is not
+            neutral: delay generates its own costs through lower investment, higher
+            debt service, and damage to constrained households. For a given fiscal
+            effort, expenditure-based consolidation achieves faster debt reduction
+            with lower growth and distributional costs than revenue-based
+            consolidation. As a complementary exercise, pairing the expenditure-based
+            path with growth-enhancing structural reforms further improves outcomes
+            by lifting real wages, a channel that disproportionately benefits
+            hand-to-mouth households. Across both strategies, modest well-targeted
+            transfers to low-income households can substantially mitigate
+            distributional costs at minimal fiscal expense while supporting aggregate
+            demand.
+          </p>
+        </details>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="stamp">
+        <span class="yr">2026</span>
+        <span class="status published">IMF WP 26/076</span>
+      </div>
+      <div>
+        <h3>Welfare Analysis of Income-Stabilization Policies in a HANK Model with Unemployment Risk</h3>
+        <p class="byline">
+          with <a href="https://sites.google.com/view/stefanograncini/">Stefano Grancini</a>
+          and <a href="https://sites.google.com/site/marcospoplawskiribeiro/home">Marcos Poplawski-Ribeiro</a> &middot;
+          <a href="https://www.imf.org/en/publications/wp/issues/2026/04/10/welfare-analysis-of-income-stabilization-policies-in-a-hank-model-with-unemployment-risk-575354">IMF Working Paper 2026/076</a>,
+          April 2026 &middot;
+          <a href="/files/hank_sam__rcea_.pdf">Presentation</a>
+        </p>
+        <details>
+          <summary>Abstract</summary>
+          <p class="abstract">
+            Understanding how policies can stabilize household welfare during
+            recessions requires a framework that captures household heterogeneity,
+            unemployment risk, and general-equilibrium labor market dynamics. We
+            study a contractionary demand shock in a Heterogeneous-Agent
+            New-Keynesian model with search-and-matching friction on the labor market
+            (HANK&ndash;SAM) and compare the effectiveness of alternative
+            income-stabilization policies. Using a common fiscal envelope, we
+            contrast increases in unemployment insurance generosity with targeted
+            transfers to hand-to-mouth households and universal transfers. Policy
+            effectiveness is assessed through aggregate consumers' welfare, measured
+            in consumption-equivalent variation units. In an economy calibrated to
+            U.S. data, unemployment insurance yields the largest welfare gain per
+            percentage point of fiscal cost, followed by targeted transfers, while
+            universal transfers are the least effective. A temporary increase in
+            unemployment insurance generates the highest welfare, as it combines
+            immediate cash-flow support with insurance effects, disproportionately
+            benefiting households with high marginal propensities to consume.
+          </p>
+        </details>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="stamp">
+        <span class="yr">2025</span>
+        <span class="status published">IMF WP 25/227</span>
+      </div>
+      <div>
+        <h3>Macroeconomic Effects and Spillovers from Bank of Japan Unconventional Monetary Policy</h3>
+        <p class="byline">
+          with <a href="https://sites.google.com/view/yancswallow">Yan Carriere-Swallow</a>
+          and <a href="https://genekindberg.github.io/">Gene Kindberg-Hanlon</a> &middot;
+          <a href="https://www.imf.org/en/publications/wp/issues/2025/11/06/macroeconomic-effects-and-spillovers-from-bank-of-japan-unconventional-monetary-policy-571620">IMF Working Paper 2025/227</a>,
+          November 2025
+        </p>
+        <details>
+          <summary>Abstract</summary>
+          <p class="abstract">
+            We provide empirical evidence on the impact of the Bank of Japan's
+            unconventional monetary policies on domestic economic variables and their
+            spillovers to international sovereign yields. Using high-frequency asset
+            price surprises to Bank of Japan (BOJ) policy announcements, we identify
+            shocks to forward guidance (FG) and large-scale asset purchase (LSAP)
+            policies. We show that expansionary LSAP and FG shocks increase Japanese
+            activity and stock prices, lower unemployment, and depreciate the yen. We
+            find that FG and LSAP shocks produce spillovers to sovereign bond yields
+            in other countries. Spillovers from BOJ LSAP shocks seem to transmit
+            through term premia, and the strength of spillovers is strongest to those
+            markets where Japanese investors have a larger participation.
+          </p>
+        </details>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="stamp">
+        <span class="yr">2026</span>
+        <span class="status">Working paper</span>
+      </div>
+      <div>
+        <h3>Heterogeneous Markups Cyclicality and Monetary Policy</h3>
+        <p class="byline">
+          with <a href="https://martamorazzoni.weebly.com/">Marta Morazzoni</a>
+          and <a href="https://sites.google.com/view/andreachiavari/research">Andrea Chiavari</a> &middot;
+          <a href="/files/nkfdproject_feb2026.pdf">Latest version</a>, February 2026
+        </p>
+        <details>
+          <summary>Abstract</summary>
+          <p class="abstract">
+            This paper revisits the question on the conditional cyclicality of the
+            aggregate markup using a micro-to-macro approach, which highlights the
+            role of firm-level heterogeneous cyclicality, the reallocation of economic
+            activity across firms, and aggregation methods. Using US firm-level data
+            from 1990 to 2016, we find that young firms have procyclical markups
+            conditional on monetary shocks, while older firms show countercyclical
+            markups. Moreover, economic activity reallocates from old to young firms
+            after monetary shocks. Aggregating these responses, we find that the
+            aggregate markup is countercyclical to monetary shocks. Over time, firm
+            aging has changed the distribution of firms, altering the aggregate markup
+            cyclicality, which helps reconcile part of the conflicting findings in the
+            literature.
+          </p>
+        </details>
+        <p class="venues">
+          <span class="lab">Presented at</span><br>
+          CREI Lunch (Mar 2021) &middot; BSE Jamboree (Oct 2021) &middot; PhD-EVS (Feb 2022) &middot;
+          RES (Apr 2022) &middot; Spring Meeting of Young Economists (May 2022) &middot;
+          Individual Risks and the Macroeconomy, Sciences Po (Jun 2022)
+        </p>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="stamp">
+        <span class="yr">2026</span>
+        <span class="status">Working paper</span>
+      </div>
+      <div>
+        <h3>Labor and Family Dynamics in a Joint-Search Framework</h3>
+        <p class="byline">
+          with <a href="https://martamorazzoni.weebly.com/">Marta Morazzoni</a> &middot;
+          <a href="/files/joint_search.pdf">Latest version</a>, January 2026
+        </p>
+        <details>
+          <summary>Abstract</summary>
+          <p class="abstract">
+            This paper develops a quantitative model of search in the labor and
+            marriage markets. Heterogeneous agents accumulate and deplete
+            productivity, search and lose jobs, and undergo a two-sided matching
+            process to form couples. Sorting and selection into couples determine
+            productivity differences across married and singles, while income-sharing
+            insures agents in couples from productivity shocks and unemployment risk.
+            Calibrated to U.S. evidence, the model explains 85% of the wage marital
+            premium and 50% of the unemployment marital gap. We find that ignoring
+            endogenous marital choices mismeasures welfare gains and fiscal costs of
+            more generous unemployment benefits and tax credits by 20&ndash;25%.
+          </p>
+        </details>
+        <p class="venues">
+          <span class="lab">Presented at</span><br>
+          BSE Jamboree (Oct 2020) &middot; CREI Lunch (Dec 2020) &middot;
+          Webinar in Gender and Family Economics (Jun 2021) &middot; ESPE (Jun 2021) &middot;
+          EEA-ESEM (Aug 2021) &middot; Spanish Macroeconomic Network (Oct 2021) &middot;
+          Dale Mortensen Copenhagen Conference (Oct 2021) &middot;
+          Symposium of the Spanish Economic Association (Dec 2021)
+        </p>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="stamp">
+        <span class="yr">2023</span>
+        <span class="status">Working paper</span>
+      </div>
+      <div>
+        <h3>Optimal Monetary Policy in HANK</h3>
+        <p class="byline">
+          <a href="/files/optimalmonetarypolicyhank.pdf">Latest version</a>,
+          June 2023 &middot; first draft April 2022
+        </p>
+        <details>
+          <summary>Abstract</summary>
+          <p class="abstract">
+            I study the optimal monetary policy in a New Keynesian model with
+            heterogeneous households. The Ramsey planner maximizes aggregate welfare
+            in an economy with rich heterogeneity in the income distribution, as well
+            as a wealth distribution that features an occasionally binding borrowing
+            constraint. I show that heterogeneity qualitatively changes optimal
+            monetary policy relative to the representative agent economy. I highlight
+            that the importance of the novel incentive of the optimal policy in this
+            setting comes from counteracting the increase of hand-to-mouth households
+            in recessions. The mechanism acts through mitigating unequal exposure of
+            households to an aggregate shock, hence the effect is partially present
+            even in the absence of this incentive.
+          </p>
+        </details>
+        <p class="venues">
+          <span class="lab">Presented at</span><br>
+          BSE Jamboree (Oct 2020) &middot; CREI Lunch (Dec 2020) &middot; CREI Lunch (Mar 2022) &middot;
+          First PhD Workshop in Money and Finance, Riksbank (May 2022) &middot;
+          Econometric Society Australasia Meeting (Jul 2022) &middot; EEA Congress (Aug 2022) &middot;
+          New Challenges to Monetary Policy, Mannheim/EABCN (Sep 2022) &middot; CREI Lunch (Sep 2022)
+        </p>
+      </div>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2>Discussions</h2>
+
+    <article class="entry disc">
+      <div class="stamp"><span class="yr">2022</span><span class="status">CEBRA</span></div>
+      <div>
+        <h3>Estimating Nonlinear Heterogeneous Agents Models with Neural Networks</h3>
+        <p>
+          <em>Presentation by Matthias Rottner, CEBRA Annual Meeting, August 2022.</em>
+          <a href="/files/neuralnetworkshank_cebra_discussion__2_.pdf">Slides</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="entry disc">
+      <div class="stamp"><span class="yr">2022</span><span class="status">BSE</span></div>
+      <div>
+        <h3>The Distributional Dynamics of Wages Over the Business Cycle</h3>
+        <p>
+          <em>Presentation by Victor Saldarriaga, Barcelona School of Economics Jamboree, May 2022.</em>
+          <a href="/files/jamboree_discussion.pdf">Slides</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="entry disc">
+      <div class="stamp"><span class="yr">2021</span><span class="status">BSE</span></div>
+      <div>
+        <h3>Optimal Fiscal Policy with Ricardian and Hand-to-Mouth Agents</h3>
+        <p>
+          <em>Presentation by Shangdi Hou, Barcelona School of Economics Jamboree, October 2021.</em>
+          <a href="/files/jamboreediscuss.pdf">Slides</a>
+        </p>
+      </div>
+    </article>
+
+  </section>
+
+  <footer>
+    <p>
+      The views expressed on this site are my own and do not necessarily represent
+      those of the IMF, its Executive Board, or IMF management.
+    </p>
+    <p>Last updated July 2026.</p>
+  </footer>
+
+</div>
+</body>
+</html>
