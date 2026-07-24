@@ -1,1 +1,1 @@
-# DanilaSmirnovEcon.github.io
+# danilasmirnov.github.io
